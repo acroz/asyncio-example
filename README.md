@@ -5,7 +5,7 @@ implements a job agent which runs another command while concurrently sending a
 regular heartbeat to a tracking server. Status information about the job is
 also sent to the tracking server.
 
-## Usage
+## Usage
 
 This example requires Python 3.7 or higher. If you don't have that available on
 your system, I recommend looking into [pyenv][pyenv] or [conda][conda].
