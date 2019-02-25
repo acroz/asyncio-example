@@ -1,14 +1,15 @@
 # asyncio example
 
-This repo contains an example program demonstrating a use of asyncio. It
-implements a job agent which runs another command while concurrently sending a
-regular heartbeat to a tracking server. Status information about the job is
-also sent to the tracking server.
+This repo contains an example program demonstrating a use of asyncio, and
+accompanies my [blog post] on the topic. The program implements an example job
+runner agent which runs another command while concurrently sending a regular
+heartbeat to a tracking server. Status information about the job is also sent
+to the tracking server on start and completion.
 
 ## Usage
 
 This example requires Python 3.7 or higher. If you don't have that available on
-your system, I recommend looking into [pyenv][pyenv] or [conda][conda].
+your system, I recommend looking into [pyenv] or [conda].
 
 Install the dependencies with:
 
@@ -61,5 +62,6 @@ Received status failed
 127.0.0.1 - - [15/Feb/2019 13:57:33] "PUT /status HTTP/1.1" 200 -
 ```
 
+[blog post]: https://acroz.github.io/2019/02/25/asyncio/
 [pyenv]: https://github.com/pyenv/pyenv
 [conda]: https://conda.io/en/latest/
